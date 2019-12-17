@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas: "um dois tres";
+
+    background-color: grey;
+}
+menu{
+    grid-area: um;   
+    background-color: green;
+}
+aside{
+    grid-area: dois;   
+    background-color: red;
+
+}
+main{
+    grid-area: tres;  
+    background-color: blue;
+
+}

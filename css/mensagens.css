@@ -1,0 +1,107 @@
+#mensagens{
+    display: grid;
+    grid-template-rows: 10% 75% 15%;
+    grid-template-areas: 'header' 'main' 'footer';
+    background-color: blue;
+
+}
+#mensagens header{
+    grid-area: 'header';
+    background-color: #f2f7f7;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 2px solid #ecf1f1;
+}
+#mensagens main{
+    grid-area: 'main';
+    background-color: #f2f7f7;
+
+
+}
+#mensagens footer{
+    grid-area: 'footer';
+    background-color: #ffffff;
+
+
+}
+#mensagens #mensagens-contato{
+    font-size: 25px;
+    color: #6d757c;
+}
+#mensagens header #mensagens-online{
+    font-size: 15px;
+    color: #6d767e;
+}
+#mensagens header #mensagens-online div{
+    display: inline-block;
+    margin: 0 2px 0 10px;
+    width: 10px;
+    height: 10px;
+    background-color: #53d389;
+    border-radius: 50px;
+}
+#mensagens main{
+    padding: 10px 20px;
+}
+#mensagens main [class*="mensagens-msg-"]{
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#mensagens main [class*="mensagens-msg-"] img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+#mensagens main [class*="mensagens-msg-"] .caixa-mensagem{
+    margin: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+#mensagens main .mensagens-msg-remetente{
+    justify-content: flex-end;
+}
+#mensagens main .mensagens-msg-remetente .caixa-mensagem{
+    background-color: #54d38a;
+    color: #ffffff;
+}
+#mensagens main .mensagens-msg-destinatario .caixa-mensagem{
+    background-color: #ffffff;
+    color: #7c8085;
+}
+
+#mensagens footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.botao{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+#mensagens footer button{
+    float: right;
+    color: blue;
+    font-weight: bold;
+    background-color: #ffffff;
+    border: none;
+    font-size: 20px;
+}
+
+#mensagens #enviar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#mensagens #enviar input{
+    width: 95%;
+    border: none;
+    padding-left: 10px;
+    font-size: 25px;
+    color: #7c8085;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat-PHP</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="opcoes">
+
+    </div>
+    <div id="contatos">
+
+    </div>
+    <div id="mensagens">
+        <header>
+            <div id="mensagens-contato">Cris Marina</div>
+            <div id="mensagens-online"><div></div>online</div>
+        </header>
+        <main>
+            <div class="mensagens-msg-remetente">
+                <p class="caixa-mensagem">dasdasd<p>
+                <img src="layout/perfil.jpeg" alt="remetente">
+            </div>
+            <div class="mensagens-msg-destinatario">
+                <img src="layout/perfil.jpeg" alt="destinatario">
+                <p class="caixa-mensagem">dasdasd<p>
+            </div>
+        </main>
+        <footer>
+            <div  id="emoji"><img class="botao" src="icon/happy.png" alt="emoji"></div>
+            <div  id="anexo"><img class="botao" src="icon/anexo.png" alt="anexo"></div>
+            <form id="enviar" action="php/enviar.php" method="post">
+                <input type="text" placeholder="Digite algo...">
+                <button><img class="botao" src="icon/enviar.png" alt="enviar"></button>
+            </form>
+        </footer>
+    </main>
+</body>
+</html>
